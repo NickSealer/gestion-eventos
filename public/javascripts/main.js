@@ -1,16 +1,13 @@
 $(function(){
   'use strict';
-  
+
   $('#login-form').submit(function(e){
     e.preventDefault();
     var user = $('#usuario').val();
     var pass = $('#password').val();
 
-
     if (user == "manager" && pass == "admin123456") {
       setTimeout(function(){
-        console.log(user);
-        console.log(pass);
         window.location.href = "admin/index.html";
       }, 3000)
       login_success();
